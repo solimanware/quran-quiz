@@ -920,7 +920,7 @@ const quranVerses = {
   
   async function getRandomAyah() {
   const data = await fetch(
-    `http://api.alquran.cloud/v1/ayah/${getNumberBetween(1, 6236)}`
+    `https://api.alquran.cloud/v1/ayah/${getNumberBetween(1, 6236)}`
   );
   const json = await data.json();
   return json?.data;
