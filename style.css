@@ -8,12 +8,19 @@ body,html{
     margin: auto;
     color:black;
     font-size: 50px;
-    font-family: Hafs,serif;
+    font-family: Amiri,serif;
     background:rgba(255,255,255,0.7);
     padding: 20px;
     border-radius: 10px;
     position: relative;
     text-align: center;
+}
+#aya{
+    display: inline;
+}
+#ayanumber{
+    display: inline;
+    font-family: Hafs,serif;
 }
 #surah{
     position:absolute;
@@ -25,6 +32,25 @@ body,html{
     padding: 10px;
     border-radius: 5px;
 }
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.button{
+    width: 20%;
+    height:60px;
+    background:rgba(255,255,255,0.7);
+    border-radius: 10px;
+    font-size:20px;
+    font-family: Amiri,serif;
+
+}
+@font-face {
+    font-family: Amiri;
+    src: url(AmiriQuran-Regular.ttf);
+  }
 @font-face {
     font-family: Hafs;
     src: url(hafs.otf);

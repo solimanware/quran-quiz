@@ -929,7 +929,8 @@ let ayah
 async function displayAyah() {
    ayah = await getRandomAyah();
   console.log(ayah);
-  document.getElementById("ayah").innerText = ayah?.text;
+  document.getElementById("ayah").innerText = ayah?.text.split('\n')[0];
+  console.log(ayah?.text);
   //document.getElementById('surahname').innerText = ayah?.surah?.name;
   document.getElementById("ayanumber").innerText = (ayah?.numberInSurah)
     .toString()
